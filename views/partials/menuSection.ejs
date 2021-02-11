@@ -1,0 +1,22 @@
+<div class="ps-row ps-padding-64" id="menu">
+    <div class="ps-col l6 ps-padding-large">
+        <h1 class="ps-center">
+            <%= dish.dish %>
+        </h1>
+        <br />
+        <h4>
+            <% if (dish.extendedDesc.length==0) { %>
+                Plato típico.
+                <% } else { %>
+                    <%= dish.extendedDesc %>
+                <% }; %>
+        </h4>
+        <p class="ps-text-grey">
+            U$D <%= dish.price %>
+        </p>
+    </div>
+
+    <div class="ps-col l6 ps-padding-large ps-img-menu">
+        <img src="/images/<%= dish.img %>" class="ps-round ps-image ps-opacity-min" alt="Menu" />
+    </div>
+</div>
